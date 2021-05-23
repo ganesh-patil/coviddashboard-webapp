@@ -26,6 +26,12 @@ $(function () {
       success: function (data) {
        // window.location.replace("index.html");
        console.log(data.data.regional);
+       $("#confirmedCasesForeign").text(data.data.summary.confirmedCasesForeign);
+       $("#confirmedCasesIndian").text(data.data.summary.confirmedCasesIndian);
+       $("#deaths").text(data.data.summary.deaths);
+       $("#discharged").text(data.data.summary.discharged);
+       $("#total").text(data.data.summary.total);
+       
        var larr = [];
        var carr = [];
        var i;
