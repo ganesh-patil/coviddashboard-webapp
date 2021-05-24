@@ -27,6 +27,7 @@ $(function(){
 	    },
 	    error: function(data) {
 	    	console.log(data);
+	    	alert("Registration failed. "+data.responseJSON.name);
 	    }
 	});
   });
